@@ -10,11 +10,11 @@ Build docker image:
 
 Precompute the bloom filter:
 
-`docker run -it --entrypoint=/brainflayer/hex2blf -v`pwd`/data:/data brainflayer /data/input.hex /data/result.blf`
+```docker run -it --entrypoint=/brainflayer/hex2blf -v`pwd`/data:/data brainflayer /data/input.hex /data/result.blf```
 
 Run Brainflayer against it:
 
-`docker run -it -v`pwd`/data:/data brainflayer -v -b /data/result.blf -i /data/phraselist.txt`
+```docker run -it -v`pwd`/data:/data brainflayer -v -b /data/result.blf -i /data/phraselist.txt```
 
 ## Disclaimer
 
